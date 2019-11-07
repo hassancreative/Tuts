@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+ 
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+          }
+form{
+    padding-left: 50px;
+    padding-top: 50px;
+}
+          input[type="checkbox"]{
+              -webkit-appearance: none
+          }
+          
+          input[type="checkbox"]:before{
+              content: '\2714';
+              width: 25px;
+              height: 25px;
+              border:2px solid lightgreen;
+              border-radius: 2px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              font-size: 16px;
+              color: transparent;
+              overflow: hidden;
+              transition: ease all .1s;
+          }
+
+          input[type="checkbox"]:focus{
+            outline: none !important; 
+          }
+          
+          input[type="checkbox"]:checked:before{
+              color: #fff;
+              background: lightgreen
+              
+          }
+          input[type="checkbox"]:active:before{
+              transform: scale(0)
+          }
+    </style>
+
+ 
+    <form action="">
+        <label for="apple">
+            <input type="checkbox" name="apple" id="apple" value="apple">
+        </label>
+        <label for="mango">
+            <input type="checkbox" name="mango" id="mango" value="mango">
+        </label>
+        <label for="orange">
+            <input type="checkbox" name="orange" id="orange" value="orange">
+        </label>
+        <label for="pineAppl">
+            <input type="checkbox" name="pineAppl" id="pineAppl" value="pineAppl">
+        </label>
+    </form>
+ 
+</body>
+</html>
